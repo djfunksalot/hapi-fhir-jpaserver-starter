@@ -19,6 +19,7 @@
     <prerequisites>
         <maven>3.5.0</maven>
     </prerequisites>
+ 
 
     <dependencies>
         <dependency>
@@ -243,6 +244,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-jdbc-driver</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+ 
 
     </dependencies>
 
@@ -257,6 +264,11 @@
                 <enabled>false</enabled>
             </snapshots>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>neo4j-maven</id>
+            <name>neo4j maven</name>
+            <url>http://m2.neo4j.org</url>
         </repository>
     </repositories>
 
